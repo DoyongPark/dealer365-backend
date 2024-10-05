@@ -15,7 +15,7 @@
     ],
     "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
-  "nxCloudId": "66fea6d72c32ce2eb03b5b8d",
+  "nxCloudId": "67015fc99c40b1071deb0629",
   "plugins": [
     {
       "plugin": "@nx/webpack/plugin",
@@ -36,15 +36,7 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": [       
-      ]
+      "exclude": ["apps/crm-api-e2e/**/*"]
     }
-  ],
-  "targetDefaults": {
-    "@nx/js:tsc": {
-      "cache": true,
-      "dependsOn": ["^build"],
-      "inputs": ["production", "^production"]
-    }
-  }
+  ]
 }

@@ -14,14 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {
-      "@dealer365-backend/database": ["libs/database/src/index.ts"],
-      "@dealer365-backend/nest": ["libs/nest/src/index.ts"],
-      "@dealer365-backend/shared": ["libs/shared/src/index.ts"]
-    },
-    "strictPropertyInitialization": false,
-    "noImplicitAny": false,
-    "strictNullChecks": false,
+    "paths": {}
   },
   "exclude": ["node_modules", "tmp"]
 }
