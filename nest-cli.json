@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "database3": {
+      "type": "library",
+      "root": "libs/database3",
+      "entryFile": "index",
+      "sourceRoot": "libs/database3/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/database3/tsconfig.lib.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true
+  }
+}

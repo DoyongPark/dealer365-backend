@@ -4,26 +4,10 @@
   "license": "MIT",
   "scripts": {
     "setup": "npx --yes pnpm@latest i && node scripts/setup-apps-env-files.js && pnpm build",
-    "clean:dist": "rimraf dist",
-    "format": "nx format:write",
-    "lint": "nx run-many --target=lint --all",
-    "test": "nx run-many --target=test --all",
-    "build:crm-api": "nx build crm-api",
-    "build:sale-api": "nx build sale-api",
-    "build:product-api": "nx build product-api",
-    "build:libs:nest": "nx build nest",
-    "build:libs:shared": "nx build shared",
-    "build:libs:database": "nx build database",
     "build": "nx run-many --target=build --all",
     "start:crm-api": "nx serve crm-api",
-    "start:sale-api": "nx serve sale-api",
-    "start:product-api": "nx serve product-api",
     "start:dev:crm-api": "nx serve crm-api --configuration=development",
-    "start:dev:sale-api": "nx serve sale-api --configuration=development",
-    "start:dev:product-api": "nx serve product-api --configuration=development",
-    "start:prod:crm-api": "npx --yes pnpm@latest i && node scripts/setup-apps-env-files.js && pnpm build && nx serve crm-api",
-    "start:prod:sale-api": "nx serve sale-api --configuration=production",
-    "start:prod:product-api": "nx serve product-api --configuration=production"
+    "start:prod:crm-api": "nx serve crm-api --configuration=production"
   },
   "private": true,
   "dependencies": {
@@ -63,6 +47,16 @@
     "tslib": "^2.3.0",
     "typescript": "~5.5.2",
     "typescript-eslint": "^8.0.0",
+    "verdaccio": "^5.0.4",
     "webpack-cli": "^5.1.4"
+  },
+  "nx": {
+    "includedScripts": []
+  },
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "libs/*"
+    ]
   }
 }

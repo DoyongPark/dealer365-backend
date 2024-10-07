@@ -1,0 +1,15 @@
+{
+  "name": "@dealer365/crm-api",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "nest build"
+  },
+  "private": true,
+  "dependencies": {
+    "@nestjs/config": "^3.2.3",
+    "@nestjs/cqrs": "^10.2.7",
+    "@nestjs/swagger": "^7.4.2",
+    "compression": "^1.7.4",
+    "helmet": "^8.0.0"
+  }
+}
